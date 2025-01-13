@@ -9,8 +9,10 @@ import { Footer } from "@/components/Footer";
 import { About } from "@/components/About";
 
 export default function Home() {
+  'use client';
+  
   return (
-    <div className="min-h-screen">
+    <main className="min-h-screen">
       <Navbar />
       <Hero />
       <HowItWorks />
@@ -20,6 +22,6 @@ export default function Home() {
       <FAQ />
       <Newsletter />
       <Footer />
-    </div>
+    </main>
   );
 }
