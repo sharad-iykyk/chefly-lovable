@@ -7,8 +7,9 @@ export const Navbar = () => {
 
   const navItems = [
     { name: 'Home', href: '#home' },
+    { name: 'How It Works', href: '#how-it-works' },
     { name: 'Features', href: '#features' },
-    { name: 'About', href: '#about' },
+    { name: 'Pricing', href: '#pricing' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -17,7 +18,7 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <span className="text-2xl font-bold text-primary">Logo</span>
+            <span className="text-2xl font-bold text-primary">Chefly</span>
           </div>
           
           <div className="hidden md:block">
@@ -31,7 +32,7 @@ export const Navbar = () => {
                   {item.name}
                 </a>
               ))}
-              <Button>Get Started</Button>
+              <Button>Book Now</Button>
             </div>
           </div>
           
@@ -61,7 +62,7 @@ export const Navbar = () => {
               </a>
             ))}
             <div className="pt-2">
-              <Button className="w-full">Get Started</Button>
+              <Button className="w-full">Book Now</Button>
             </div>
           </div>
         </div>
