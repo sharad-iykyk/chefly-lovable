@@ -4,18 +4,13 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "@/styles/globals.css";
 
-export const metadata = {
-  title: 'Chefly - Personal Chef Services',
-  description: 'Book a personal chef to prepare healthy, delicious meals tailored to your preferences—all in the comfort of your home.',
-};
+const queryClient = new QueryClient();
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const queryClient = new QueryClient();
-  
   return (
     <html lang="en">
       <body>
