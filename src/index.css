@@ -40,11 +40,7 @@
 }
 
 .hero-gradient {
-  background: linear-gradient(135deg, 
-    rgba(147,39,143,1) 0%,
-    rgba(234,172,232,1) 50%,
-    rgba(246,219,245,1) 100%
-  );
+  background: linear-gradient(102.3deg, rgba(147,39,143,1) 5.9%, rgba(234,172,232,1) 64%, rgba(246,219,245,1) 89%);
 }
 
 @keyframes fade-in {

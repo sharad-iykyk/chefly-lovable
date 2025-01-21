@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center pt-16 hero-gradient">
+    <section id="home" className="min-h-screen flex items-center pt-16 bg-gradient-to-br from-primary/90 via-primary/80 to-primary/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center lg:text-left lg:grid lg:grid-cols-2 lg:gap-12 items-center">
           <div className="space-y-8 animate-fade-in">

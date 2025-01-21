@@ -31,7 +31,7 @@ const features = [
 
 export const Features = () => {
   return (
-    <section id="features" className="py-24 bg-gray-50">
+    <section id="features" className="py-24 bg-gradient-to-br from-accent/20 via-background to-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl">
@@ -46,7 +46,7 @@ export const Features = () => {
           {features.map((feature, index) => (
             <Card
               key={index}
-              className="relative flex flex-col items-center p-8 bg-white hover:shadow-xl transition-shadow duration-300 group"
+              className="relative flex flex-col items-center p-8 bg-white/50 backdrop-blur-sm hover:shadow-xl transition-all duration-300 group border-primary/10"
             >
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary group-hover:scale-110 transition-transform duration-300">
                 <feature.icon className="h-8 w-8" />
