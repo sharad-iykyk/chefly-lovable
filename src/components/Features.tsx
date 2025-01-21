@@ -1,4 +1,5 @@
 import { UserCheck, Calendar, Leaf, Globe, Clock } from "lucide-react";
+import { Card } from "./ui/card";
 
 const features = [
   {
@@ -33,30 +34,30 @@ export const Features = () => {
     <section id="features" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+          <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl">
             Features & Benefits
           </h2>
-          <p className="mt-4 text-lg text-gray-600">
+          <p className="mt-4 text-xl text-gray-600">
             Everything you need for a perfect dining experience
           </p>
         </div>
 
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
-            <div
+            <Card
               key={index}
-              className="relative flex flex-col items-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              className="relative flex flex-col items-center p-8 bg-white hover:shadow-xl transition-shadow duration-300 group"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
-                <feature.icon className="h-6 w-6" />
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary group-hover:scale-110 transition-transform duration-300">
+                <feature.icon className="h-8 w-8" />
               </div>
-              <h3 className="mt-4 text-lg font-medium text-gray-900">
+              <h3 className="mt-6 text-xl font-semibold text-gray-900">
                 {feature.title}
               </h3>
-              <p className="mt-2 text-center text-gray-500">
+              <p className="mt-4 text-center text-gray-600">
                 {feature.description}
               </p>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
